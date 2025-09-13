@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duke's Sweet Bakery</title>
+    <meta
+      name="description"
+      content="Handcrafted pastries, artisanal breads, and sweet delights baked fresh daily."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-script">Duke's Sweet Bakery</span>
+        </a>
+
+        <nav id="nav-menu" class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+          <a href="#cart" class="btn btn-primary small">view order</a>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1>Our Menu</h1>
+      <div class="menu-controls">
+        <input
+          type="text"
+          id="menu-search"
+          placeholder="Search menu..."
+          aria-label="Search menu"
+        />
+        <div class="menu-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="cakes">Cakes</button>
+          <button class="filter-btn" data-category="pastries">Pastries</button>
+          <button class="filter-btn" data-category="breads">Breads</button>
+        </div>
+      </div>
+      <div class="menu-sections">
+        <!-- Cakes Section -->
+        <section class="menu-category" data-category="cakes">
+          <h2>Cakes</h2>
+          <div class="menu-items-grid">
+            <div class="menu-card">
+              <img
+                src="https://wallpapercave.com/wp/wp2126439.jpg"
+                alt="Chocolate Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Chocolate Cake</span>
+                <span class="item-price">GH₵250</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.sYfFqLNSeNRGjUeMwjzkGgHaHa?w=500&h=500&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Vanilla Bean Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Vanilla Bean Cake</span>
+                <span class="item-price">GH₵300</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://wallpapers.com/images/featured/red-velvet-cake-t18e0ia5ykacmxqa.jpg"
+                alt="Red Velvet Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Red Velvet Cake</span>
+                <span class="item-price">GH₵280</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.ua9L_GQl1A5wlWH8ecgy9QHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Carrot Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Carrot Cake</span>
+                <span class="item-price">GH₵150</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://www.gillsbakesandcakes.com/wp-content/uploads/2021/07/lemondrizzzle-scaled-e1625742869198.jpg"
+                alt="Lemon Drizzle Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Lemon Drizzle Cake</span>
+                <span class="item-price">GH₵120</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://img.freepik.com/premium-photo/cheesecake_693838-1468.jpg"
+                alt="Cheesecake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Cheesecake</span>
+                <span class="item-price">GH₵240</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.ihGlNvsy3U1TsOPSXHa2aAHaHZ?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Black Forest Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Black Forest Cake</span>
+                <span class="item-price">GH₵242</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.xvLT6q0LJJhu7qeKu8qXDAHaFW?w=1600&h=1156&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Opera Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Opera Cake</span>
+                <span class="item-price">GH₵145</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.eG-zXHJOdXUsh1TcuFOuLgHaHa?w=512&h=512&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Funfetti Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Funfetti Cake</span>
+                <span class="item-price">GH₵130</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://img.freepik.com/premium-photo/fruit-cake-isolated-black-background_533566-1312.jpg"
+                alt="Ghana Fruit Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Ghana Fruit Cake</span>
+                <span class="item-price">GH₵136</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://www.365daysofbakingandmore.com/wp-content/uploads/2011/02/Pound-Cake-1-768x512.jpg"
+                alt="Pound Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Pound Cake</span>
+                <span class="item-price">GH₵128</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://img.freepik.com/premium-photo/tres-leches-cake-traditional-cake-from-latin-america-table-top-view-photo-realistic-ai-generated_29654-3427.jpg?w=2000"
+                alt="Tres Leches Cake"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Tres Leches Cake</span>
+                <span class="item-price">GH₵100</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pastries Section -->
+        <section class="menu-category" data-category="pastries">
+          <h2>Pastries</h2>
+          <div class="menu-items-grid">
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.l90r7uC-G_2LBVTkjabuDwHaE9?w=4350&h=2917&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Croissant"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Croissant</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.pWYkPMzFHAktHsOvDponzwHaEg?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Chocolate Croissant"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Chocolate Croissant</span
+                ><span class="item-price">GH₵70</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.0-ci9e0IYWRBH-vI3bqSaQHaEA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Apple Danish"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Apple Danish</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.i-fnFzjGWpONvE6QdapOFgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Raspberry Danish"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Raspberry Danish</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.rUHZZatbTO7CceCzF7m7rAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Cheese Danish"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Cheese Danish</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.XaphLRcvHrKO1BPNkddV2gHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Chocolate Éclair"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Chocolate Éclair</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP._JHacOoRUSb-1zHa4_KLAwHaGv?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Cinnamon Roll"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Cinnamon Roll</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.SPu75QPpbjzqiTgDocrnVQHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Blueberry Muffin"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Blueberry Muffin</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.gunm8Qm_bUMzxHX9AtfOEQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Banana Nut Muffin"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Banana Nut Muffin</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.oAir336PwcDxIPKl0ejJxQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Fruit Tart"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Fruit Tart</span
+                ><span class="item-price">GH₵100</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.iBO8pzDDJF15Q1-VK8Dp9AHaLH?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Palmiers"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Palmiers</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.AajpevqKokfK6FQXEUnQJQHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Baklava"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Baklava</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.9zhMPB-xcHe5v8OH1KBt5gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Madeleine"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Madeleine</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.uvSNdVfTWpqnwfVflBKQDgHaE9?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Macarons"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Macarons</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.GGYsAi7Tc0hJvPVyzO-ZPgHaFq?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Turnover"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Turnover</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.wsip6645ijRVvzB7iPrxSAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Sticky Bun"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Sticky Bun</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.TJV8bFQX9Up1uSPtwoYldgHaLH?w=768&h=1152&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Cruller"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Cruller</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.Ppmyoa9E3eXWvmbIWhRDeAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Cream Puff"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Cream Puff</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.PyLbMG_g4pEWzunJH6LOAAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Churros"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Churros</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images6.alphacoders.com/396/thumb-1920-396589.jpg"
+                alt="Donuts"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Donuts</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://www.thecookingcollective.com.au/wp-content/uploads/2022/08/Vegetable-Spring-Rolls-2-1-500x500.jpg"
+                alt="Spring Rolls"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Spring Rolls</span
+                ><span class="item-price">GH₵5s0</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://kikifoodies.com/wp-content/uploads/2022/10/photo-output-20.jpg"
+                alt="Meat Pie"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Meat Pie</span
+                ><span class="item-price">GH₵60</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.Zlf5ZMZLjnDdQlSDALFatQHaF4?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Sausage Roll"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Sausage Roll</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://i.ytimg.com/vi/qVK-uM9Tn4c/maxresdefault.jpg"
+                alt="Chin Chin"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Chin Chin</span
+                ><span class="item-price">GH₵35</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Breads Section -->
+        <section class="menu-category" data-category="breads">
+          <h2>Breads</h2>
+          <div class="menu-items-grid">
+            <div class="menu-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2023/01/23/15/55/sourdough-7739022_1280.jpg"
+                alt="Sourdough Bread"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Sourdough Bread</span
+                ><span class="item-price">GH₵30</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.FjTNsgBZis2EQyswoIplpQHaKg?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Whole Wheat Bread"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Whole Wheat Bread</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.-hqNUaY0KqpKtC672Bb9ZgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Focaccia"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Focaccia</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.hYoAGez7Sw92mCbbU-ENFQHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Baguette"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Baguette</span
+                ><span class="item-price">GH₵30</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.KKVXrrS0iIe5b_AG25Po_gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Rye Bread"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Rye Bread</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.mpoFhXvZgI8hGptgYCWiGgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Ciabatta"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Ciabatta</span
+                ><span class="item-price">GH₵45</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://th.bing.com/th/id/R.eea7dca38b7cd3640074bc449e0e35e1?rik=ElmjGfVxsE93Wg&pid=ImgRaw&r=0"
+                alt="Multigrain Bread"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Multigrain Bread</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1621955629759-5a2d9f99c4e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFuYW5hJTIwYnJlYWR8ZW58MHx8MHx8&w=1000&q=80"
+                alt="Banana Bread"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Banana Bread</span
+                ><span class="item-price">GH₵50</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.ZfDqERS5uo9KyhyWWI6wlwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Tea Bread (Ghana)"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Tea Bread (Ghana)</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.b7XjP_5wR6taJ5xdmXLNMwAAAA?w=400&h=400&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Sugar Bread (Ghana)"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Sugar Bread (Ghana)</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://i.ytimg.com/vi/ISF7znBOGqY/maxresdefault.jpg"
+                alt="Butter Bread (Ghana)"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Butter Bread (Ghana)</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://img.freepik.com/premium-photo/brioche_26791-3016.jpg?w=2000"
+                alt="Brioche"
+              />
+              <div class="menu-card-info">
+                <span class="item-name">Brioche</span
+                ><span class="item-price">GH₵40</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="foot-brand">Duke's Sweet Bakery</div>
+        <div>&copy; 2025 Duke's Sweet Bakery. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Optional: Reveal Animations -->
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

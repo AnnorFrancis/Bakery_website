@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duke's Sweet Bakery</title>
+    <meta
+      name="description"
+      content="Handcrafted pastries, artisanal breads, and sweet delights baked fresh daily."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">
+          <span class="brand-script">Duke's Sweet Bakery</span>
+        </a>
+        <nav id="nav-menu" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+          <a href="#cart" class="btn btn-primary small">view order</a>
+        </nav>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <h1 class="headline">Our Story</h1>
+        <p class="tagline">
+          From a family kitchen to your table—discover the passion, people, and
+          history behind Duke's Sweet Bakery.
+        </p>
+        <div class="cta-row">
+          <a href="#about" class="btn btn-primary">Meet the Team</a>
+          <a href="#timeline" class="btn btn-ghost">Our Journey</a>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">⌄</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section1 section">
+      <div class="container about-inner">
+        <div class="about-img">
+          <img src="assets/duke-image.webp" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/duke-image2.webp" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/Duke-image3.jpg" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/Duke-image4.jpg" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/Duke-image5.jpg" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/Duke-image6.jpg" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/Duke-image7.jpg" alt="Inside Duke's Sweet Bakery" />
+          <img src="assets/Duke-image8.jpg" alt="Inside Duke's Sweet Bakery" />
+        </div>
+        <div class="about-content">
+          <h2>Welcome to Duke's Sweet Bakery</h2>
+          <p>
+            Duke's Sweet Bakery began as a dream in a cozy family kitchen, where
+            the aroma of fresh bread and the laughter of loved ones filled the
+            air. What started as a weekend tradition of baking for friends and
+            neighbors soon blossomed into a beloved community bakery.
+          </p>
+          <p>
+            Our philosophy is simple: use the finest ingredients, honor
+            time-honored recipes, and pour our hearts into every pastry, loaf,
+            and cake. We believe that every bite should be a celebration of
+            flavor, craft, and joy.
+          </p>
+          <div class="signature">— Duke & Family</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section id="timeline" class="section muted">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Journey</h2>
+          <p>Milestones that shaped our bakery into a local favorite.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>2012: The First Batch</h3>
+              <p>
+                Duke bakes his first sourdough loaf in his home kitchen,
+                sparking a passion for artisanal bread.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>2015: From Home to Market</h3>
+              <p>
+                Word spreads and Duke's baked goods become a hit at the local
+                farmer's market.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>2018: Opening Our Doors</h3>
+              <p>
+                The first Duke's Sweet Bakery storefront opens, welcoming the
+                community with open arms (and warm croissants).
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>2022: Award-Winning Pastries</h3>
+              <p>
+                Our signature pastries win "Best Bakery" in the city, thanks to
+                our loyal customers and dedicated team.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>2024: Expanding Our Reach</h3>
+              <p>
+                Launch of our online store, bringing Duke's Sweet Bakery
+                delights to homes near and far.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TEAM SECTION -->
+    <section id="team" class="team-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet the Team</h2>
+          <p>
+            Passionate bakers, creative minds, and friendly faces behind every
+            treat.
+          </p>
+        </div>
+        <div class="team-inner">
+          <div class="team-member">
+            <h4>Founder</h4>
+            <p>Duke</p>
+          </div>
+          <div class="team-member">
+            <h4>Pastry Chef</h4>
+            <p>Maya</p>
+            <p>James</p>
+          </div>
+          <div class="team-member">
+            <h4>Bread Artisan</h4>
+            <p>Leo</p>
+            <p>Jane</p>
+          </div>
+          <div class="team-member">
+            <h4>Customer Care</h4>
+            <p>Sophia</p>
+            <p>Bruce</p>
+            <p>Naddy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="foot-brand">Duke's Sweet Bakery</div>
+        <div>&copy; 2025 Duke's Sweet Bakery. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Optional: Reveal Animations -->
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duke's Sweet Bakery</title>
+    <meta
+      name="description"
+      content="Handcrafted pastries, artisanal breads, and sweet delights baked fresh daily."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+</html>
+<body></body>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-script">Duke's Sweet Bakery</span>
+    </a>
+
+    <nav id="nav-menu" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="btn btn-primary small">Order Now</a>
+    </nav>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- CONTACT -->
+<section id="contact" class="section muted">
+  <div class="container contact-grid">
+    <div class="contact-card reveal">
+      <div class="info-icon">📞</div>
+      <div class="info-body">
+        <h4>Contact</h4>
+        <p>
+          (555) 123 CAKE<br />
+          <a href="mailto:hello@dukessweetbakery.com"
+            >hello@dukessweetbakery.com</a
+          ><br />
+          @dukessweetbakery
+        </p>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" onsubmit="return false;">
+      <h4>Send us a Message</h4>
+      <div class="row">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Email address" required />
+      </div>
+      <textarea rows="5" placeholder="How can we help?"></textarea>
+      <button class="btn btn-primary">Send</button>
+      <p class="form-note">
+        Demo only. Hook this up to your backend or a service like Formspree.
+      </p>
+    </form>
+  </div>
+</section>

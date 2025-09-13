@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duke's Sweet Bakery</title>
+    <meta
+      name="description"
+      content="Handcrafted pastries, artisanal breads, and sweet delights baked fresh daily."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">
+          <span class="brand-script">Duke's Sweet Bakery</span>
+        </a>
+
+        <nav id="nav-menu" class="nav-links">
+          <a href="#home">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+          <a href="#cart" class="btn btn-primary small">view order</a>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <h1 class="headline">Duke's Sweet Bakery</h1>
+        <p class="tagline">
+          Handcrafted pastries, artisanal breads, and sweet delights made fresh
+          daily with love and tradition.
+        </p>
+        <div class="cta-row">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="#visit" class="btn btn-ghost">Visit Our Store</a>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">⌄</div>
+      </div>
+    </section>
+
+    <!-- SPECIALTIES / MENU PREVIEW -->
+    <section id="menu" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Specialties</h2>
+          <p>
+            Each item is crafted with the finest ingredients and traditional
+            techniques passed down through generations.
+          </p>
+        </header>
+
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=1400&auto=format&fit=crop"
+                alt="Freshly baked butter croissants on a wooden board"
+              />
+              <span class="price">40.00</span>
+            </div>
+            <div class="card-body">
+              <h3>Artisan Croissants</h3>
+              <p>Buttery, flaky perfection baked fresh every morning.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1400&auto=format&fit=crop"
+                alt="Rich chocolate cake on a stand"
+              />
+              <span class="price">200.00</span>
+            </div>
+            <div class="card-body">
+              <h3>Chocolate Deluxe Cake</h3>
+              <p>
+                Decadent layers of chocolate sponge and ganache with silky
+                buttercream.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.c2RQcwpDOheCAQ77Sghs1gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Assorted crusty sourdough loaves"
+              />
+              <span class="price">30.00</span>
+            </div>
+            <div class="card-body">
+              <h3>Fresh Sourdough</h3>
+              <p>
+                Traditional sourdough with a crisp crust and open, chewy crumb.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="center">
+          <a href="menu.html" class="btn btn-primary outline">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / OUR STORY -->
+    <section id="about" class="section muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Story</h2>
+          <p>
+            For over three generations, Duke's Sweet Bakery has been the heart
+            of our community, creating moments of joy through the art of baking.
+          </p>
+        </header>
+
+        <div class="story-grid">
+          <div class="story-copy reveal">
+            <p>
+              What started as a small family recipe collection has grown into a
+              beloved local institution. Every morning before dawn, our master
+              bakers begin their craft, using time honored techniques and the
+              finest ingredients. The breads, pastries, and sweets that leave
+              our ovens are synonymous with quality and tradition.
+            </p>
+            <p>
+              We believe that great baking is more than just following recipes.
+              It is about patience, love, and celebrating the simple pleasures
+              that bring people together.
+            </p>
+          </div>
+
+          <ul class="feature-list reveal">
+            <li>
+              <span class="icon">⏰</span>
+              <div>
+                <h4>Fresh Daily</h4>
+                <p>Everything baked fresh every morning.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">❤️</span>
+              <div>
+                <h4>Made with Love</h4>
+                <p>Family recipes passed down generations.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">🥐</span>
+              <div>
+                <h4>Quality Ingredients</h4>
+                <p>
+                  We source local dairy and premium flour for consistent
+                  excellence.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT / CONTACT -->
+    <section id="visit" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Visit Us</h2>
+          <p>
+            Come experience the warmth of our bakery and taste the difference
+            that passion makes.
+          </p>
+        </header>
+
+        <div class="visit-grid">
+          <div class="info-card reveal">
+            <div class="info-icon">📍</div>
+            <div class="info-body">
+              <h4>Location</h4>
+              <p>
+                123 Baker Street<br />Sweet Town, ST 12345<br />United States
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="info-icon">🕑</div>
+            <div class="info-body">
+              <h4>Hours</h4>
+              <p>
+                Mon Fri: 6:00 AM 8:00 PM<br />Saturday: 7:00 AM 9:00 PM<br />Sunday:
+                8:00 AM 6:00 PM
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card wide reveal">
+            <div class="ready">
+              <h4>Ready to Order?</h4>
+              <p>
+                Craving fresh pastries for breakfast, need a custom cake for a
+                special occasion, or want to treat yourself to something sweet,
+                we are here to make your day brighter.
+              </p>
+              <div class="cta-row">
+                <a id="order" href="tel:+15551232253" class="btn btn-primary"
+                  >Call to Order</a
+                >
+                <a href="#contact" class="btn btn-ghost">Custom Orders</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="foot-brand">Duke's Sweet Bakery</div>
+        <p>Crafting sweet memories since 1952</p>
+        <p class="copyright">
+          © <span id="year"></span> Duke's Sweet Bakery. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
